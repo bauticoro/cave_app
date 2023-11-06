@@ -78,7 +78,11 @@ As an example of how to edit the api, lets add a flag button to the `api_command
 4. Click on the app page:
     - You should now be looking at the app for your currently selected example.
 5. Now edit `your_app/cave_api/cave_api/examples/api_command.py`:
-    - In the block `if command == "init"` add the following key to `appBar.data`:
+    -  In line 17 add "sayHelloButton" to the list. It will end up looking like this:
+        ```
+        "data": ["refreshButton", "myCommandButton","sayHelloButton"],
+        ```
+    -  In the block `if command == "init"` add the following key to `appBar.data`:
         ```
         "sayHelloButton": {
             "icon": "md/MdFlag",
